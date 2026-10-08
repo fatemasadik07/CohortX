@@ -1,6 +1,7 @@
 <div align="center">
 
 # ⚡ CohortX Platform
+
 ### *E-Commerce Customer LTV Modeling, SHAP Explainability & Interactive Control Center*
 
 [![Python](https://img.shields.io/badge/Python-E6E6FA?style=for-the-badge&logo=python&logoColor=333333)](#)
