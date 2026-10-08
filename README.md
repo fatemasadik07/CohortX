@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡ CohortX Platform 💖
+# ⚡ CohortX Platform
 ### *E-Commerce Customer LTV Modeling, SHAP Explainability & Interactive Control Center*
 
 [![Python](https://img.shields.io/badge/Python-E6E6FA?style=for-the-badge&logo=python&logoColor=333333)](#)
@@ -19,7 +19,7 @@
 
 ## 💅🏽 Overview
 
-Let's be real: keeping existing customers around and growing their value is *so* much easier and cheaper than constantly chasing new ones! 🌸 Most basic customer tools just hand you a random historical report without explaining **why** a customer's spending is dropping or **whether it's actually worth spending money** on targeted perks to keep them in your top tiers.
+Let's be real: keeping existing customers around and growing their value is *so* much easier and cheaper than constantly chasing new ones! Most basic customer tools just hand you a random historical report without explaining **why** a customer's spending is dropping or **whether it's actually worth spending money** on targeted perks to keep them in your top tiers.
 
 We built **CohortX** to fix that exact problem with a super smooth, step-by-step workflow:
 
@@ -84,7 +84,7 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-> **Note:** Ensure your raw transaction dataset (e.g., `online_retail.csv`) is placed inside `data/raw/` before running data initialization! ✨
+> **Note:** Ensure your raw transaction dataset (e.g., `online_retail.csv`) is placed inside `data/raw/` before running data initialization!
 
 ---
 
@@ -125,14 +125,14 @@ Launch the REST API locally:
 ```bash
 uvicorn serving_layer.app.main:app --reload --port 8000
 ```
-Access interactive OpenAPI documentation at [http://localhost:8000/docs](http://localhost:8000/docs) 💌.
+Access interactive OpenAPI documentation at [http://localhost:8000/docs](http://localhost:8000/docs).
 
 ##### 5. Launch the Streamlit Dashboard
 Start the multi-page control center for customer lookups and scenario simulation:
 ```bash
 streamlit run control_center/app.py
 ```
-The application will automatically open at [http://localhost:8501](http://localhost:8501) 🌸.
+The application will automatically open at [http://localhost:8501](http://localhost:8501).
 
 ##### 6. Run Quality Assurance & Test Suite
 Execute integration tests and validate data contracts:
