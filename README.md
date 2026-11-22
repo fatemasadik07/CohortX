@@ -31,7 +31,8 @@ We built **CohortX** to fix that with a super smooth, step-by-step workflow:
 We use the **[Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)** from Kaggle: around **100K orders across 9 tables**, placed on a Brazilian marketplace between 2016 and 2018.
 
 The data is **included in this repo** in `data/raw/`, so you can run everything right after cloning. We kept 8 of the 9 files and left out `olist_geolocation_dataset.csv` to keep the repo light. It isn't needed for our analysis, and you can grab it from Kaggle if you want it.
-
+<div align="center">
+  
 | File | Used for |
 | ---- | -------- |
 | `olist_customers_dataset.csv` | Customers |
@@ -43,6 +44,8 @@ The data is **included in this repo** in `data/raw/`, so you can run everything 
 | `olist_order_reviews_dataset.csv` | Review scores (model feature) |
 | `olist_sellers_dataset.csv` | Sellers (optional analysis) |
 
+</div>
+
 > **Heads up:** In this dataset, `customer_id` is generated *per order*. We use `customer_unique_id` to recognise the same person across multiple orders! 🔑
 
 > **License note:** The dataset keeps its original license (see the Kaggle page, which credits Olist) and is not covered by this repo's MIT license.
@@ -52,6 +55,7 @@ The data is **included in this repo** in `data/raw/`, so you can run everything 
 ## 🦄 Module Architecture & Responsibilities
 
 The codebase follows a modular design split into six domain-specific directories:
+<div align="center">
 
 | Directory            | Core Focus            | Module Lead          | Primary Responsibilities                                                                                           |
 | -------------------- | --------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------ |
@@ -61,6 +65,8 @@ The codebase follows a modular design split into six domain-specific directories
 | `serving_layer/`     | API       | **Rabab Mohamed**    | FastAPI endpoint that serves the trained model's predictions.                                                      |
 | `control_center/`    | Dashboards & UI       | **Malak Mostafa**    | Streamlit multi-page dashboard, interactive charts, layout design, and overall user experience.                    |
 | `quality_assurance/` | QA & Testing          | **Farah Nasser**     | Data validation, leakage checks, Pytest suites, continuous integration workflows, and linting routines.            |
+
+</div>
 
 <div align="center">
   Built with grit, coffee, and teamwork by 5 girls and 1 guy for our DEPI Capstone!🥳
